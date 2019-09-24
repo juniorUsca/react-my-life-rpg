@@ -1,7 +1,9 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet-async'
 
 import { Context, Provider } from './context'
+import ListOfTasks from './components/ListOfTasks/index'
+
 
 const App = () => (
   <Provider>
@@ -15,11 +17,13 @@ const App = () => (
       <Detail path="detail/:id" />
     </Router> */}
 
+    <ListOfTasks />
+
     <Context.Consumer>
       {
           ({ isAuth }) => (isAuth
             ? (
-              <h1> logged </h1>
+              <h1>logged </h1>
             )
             : '')
         }

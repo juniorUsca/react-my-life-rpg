@@ -9,7 +9,8 @@
   ],
   "plugins": [
     "babel-plugin-styled-components",
-    "@babel/plugin-syntax-dynamic-import"
+    "@babel/plugin-syntax-dynamic-import", // para multiples imports
+    "@babel/plugin-proposal-optional-chaining" // para '?'
     // "@babel/plugin-proposal-class-properties"
   ]
 }
