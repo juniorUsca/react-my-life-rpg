@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   devtool: 'source-map',
   resolve: {
-    extensions: ['.js', '.jsx', '.css', '.styl', '.json'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.css', '.styl', '.json'],
   },
   entry: './src/index.js',
   output: {
@@ -66,6 +66,11 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'eslint-loader',
       }, */
+      {
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        loader: 'awesome-typescript-loader',
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,

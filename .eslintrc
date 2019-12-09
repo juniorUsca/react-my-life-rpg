@@ -21,7 +21,9 @@
           "some": [ "nesting", "id" ]
       }
     }],
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-unused-expressions": "off", // para soportar ? operator
+    "babel/no-unused-expressions": "error" // para soportar ? operator
   },
   "env": {
     "browser": true,

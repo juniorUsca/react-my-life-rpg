@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 
 import { Context, Provider } from './context'
 import ListOfTasks from './components/ListOfTasks/index'
-
+import Button from './components/Button/index.tsx'
 
 const App = () => (
   <Provider>
@@ -18,6 +18,7 @@ const App = () => (
     </Router> */}
 
     <ListOfTasks />
+    <Button />
 
     <Context.Consumer>
       {

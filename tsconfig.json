@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "CommonJS",
+    "target": "ES6",
+    "importHelpers": true,
+    "jsx": "react",
+    // "jsxFactory": "React.createElement",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "DOM", "ES2015", "ES2017"
+    ],
+    "removeComments": true,
+    "allowJs": false,
+    "baseUrl": ".",
+    "declaration": true
+  },
+  "include": ["./src/index.tsx"],
+  "exclude": ["./node_modules", "./dist"]
+}
